@@ -1,0 +1,21 @@
+//////////////////////////////////header///////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .header-main__poster{
+        display: none;
+    }
+    .header-main {
+        grid-template-columns: minmax(191px, 1fr) minmax(auto, 690px ) minmax(111px, 1fr);
+}
+}
