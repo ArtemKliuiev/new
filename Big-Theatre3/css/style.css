@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url(../../fonts/OpenSans_Condensed-Bold.ttf);
+}
+/*________________________modification__________________________*/
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+span {
+  color: #D1A954;
+}
+
+.ibg {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 87px;
+}
+
+.text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.overlay {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 51, 51, 0.9)), to(rgba(51, 51, 51, 0.9)));
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9));
+}
+
+body {
+  background-color: #333333;
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*________________________header__________________________*/
+.header {
+  height: 1045px;
+  background: url(../../img/Rectangle\ 3.jpg) 0 0/cover no-repeat;
+}
+.header .container {
+  padding: 0 191px;
+}
+.header .overlay {
+  width: 100%;
+  height: 1045px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.header-menu {
+  padding: 51px 0 0 0;
+  margin: 0 0 191px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+.header-menu__links {
+  max-width: 822px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-menu__links-list {
+  max-width: 822px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-menu__social-media {
+  display: none;
+}
+.header-menu__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header-menu__number {
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  position: relative;
+}
+.header-menu__number::after {
+  content: "";
+  left: 0;
+  bottom: -4px;
+  position: absolute;
+  width: 139px;
+  height: 2px;
+  background-color: gold;
+}
+
+.header-main {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-main__body {
+  margin-right: 74px;
+}
+.header-main__title {
+  margin: 117px 0 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 68px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.header-main__text {
+  max-width: 591px;
+  padding: 0 0 40px;
+}
+.header-main__text p {
+  margin-bottom: 20px;
+}
+.header-main__text p:last-child {
+  margin: 0;
+}
+.header-main__button {
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.header-main__link {
+  line-height: 50px;
+  width: 160px;
+  background: #D1A954;
+}
+.header-main__poster {
+  display: none;
+}
+.header-main__posters-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header-main__posters-nav span {
+  display: block;
+  line-height: 22px;
+}
+.header-main__posters-nav img {
+  max-width: 40px;
+}
+.header-main__nav-previous {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-main__nav-previous img {
+  padding-right: 10px;
+}
+.header-main__nav-next {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-main__nav-next img {
+  padding-left: 10px;
+}
+
+.header-contacts {
+  position: absolute;
+  background: rgba(51, 51, 51, 0.75);
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 1045px;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 405px 340px 40px 174px;
+  -ms-grid-columns: 1fr;
+      grid-template: 405px 340px 40px 174px/1fr;
+  justify-items: center;
+}
+.header-contacts__text {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 120px;
+}
+.header-contacts__text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 80px;
+  width: 3px;
+  background-color: #C4C4C4;
+  margin-left: -1.5px;
+}
+.header-contacts__links {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-contacts__link {
+  margin: 0 auto;
+}
+
+/*________________________about-theatre__________________________*/
+.about-theatre {
+  height: 757px;
+}
+.about-theatre__title {
+  padding: 150px 0 78px 0;
+}
+.about-theatre__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-theatre__best-theatre {
+  max-width: 445px;
+  padding-right: 30px;
+}
+.about-theatre__body-title {
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.about-theatre__about-numbers {
+  min-width: 194px;
+  padding-right: 42px;
+}
+.about-theatre__icon img {
+  margin-bottom: 10px;
+}
+.about-theatre__icon-chaird {
+  margin-bottom: 23px;
+}
+.about-theatre__icon-title {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+.about-theatre__image {
+  height: 292px;
+  min-width: 230px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #D1A954;
+}
+
+/*________________________our-partners__________________________*/
+.our-partners {
+  height: 1565px;
+}
+.our-partners__title {
+  margin-bottom: 78px;
+}
+.our-partners__posters-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 89px;
+}
+.our-partners__posters {
+  height: 550px;
+  width: 1768px;
+  background-color: #D1A954;
+}
+.our-partners__best-theatre {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background: url(../../img/Rectangle\ 28.jpg) center/cover no-repeat;
+  height: 611px;
+  max-width: 1111px;
+  min-width: 0;
+  margin: 0 auto;
+}
+.our-partners__best-theatre .overlay {
+  width: 100%;
+  height: 100%;
+}
+.our-partners__body {
+  padding: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 187px;
+}
+.our-partners__years {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  max-width: 182px;
+  margin-right: 103px;
+}
+.our-partners__description {
+  height: 198px;
+  width: 430px;
+}
+.our-partners__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 230px;
+  height: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.our-partners__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+/*________________________theatre-partners__________________________*/
+.theatre-partners {
+  padding-right: 11.592%;
+  padding-left: 19.254%;
+  height: 557px;
+}
+.theatre-partners .container {
+  padding: 0;
+}
+.theatre-partners__title {
+  margin-bottom: 137px;
+}
+.theatre-partners__logo {
+  height: 209px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+.theatre-partners__first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.theatre-partners__last-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.theatre-partners__space-lab {
+  height: 40px;
+  margin-right: 28px;
+}
+.theatre-partners__avada-media {
+  padding-top: 10px;
+  margin-right: 29px;
+  height: 19.5px;
+}

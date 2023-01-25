@@ -1,0 +1,426 @@
+/*______________max-width__1490px_____________*/
+@media (max-width: 1490px) {
+  .header{
+  .container {
+    padding: 0 36px 0 191px;
+    margin: 0;
+  }
+}
+}
+/* Landscape tablets and medium desktops_____________ max-width - 1215px __________*/
+@media (max-width: 1215px) {
+  .header-menu {
+    margin: 0 75px 116px 0;
+    &__phone {
+      width: 100%;
+      transform: translateX(-36px);
+    }
+    &__links { 
+      margin: 0 0 50px 0;
+      max-width: none;
+      min-width: none;
+    }
+  }
+}
+/* Portrait tablets and small desktops_______________ max-width - 992px __________*/
+@media (max-width: 992px) {
+  .title{
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .header-main {
+    &__body {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+    }
+    &__text {
+      max-width: 690px;
+      margin-right: 75px;
+    }
+    &__poster {
+      display: none;
+    }
+  }
+  .about-theatre{
+    .container{
+      padding: 0 15px 0 6.22%;
+    }
+    &__image{
+      display: none;
+    }
+    &__about-numbers{
+      padding: 0;
+    }
+  }
+  .our-partners {
+    height: 1565px;
+    &__title {
+      margin-bottom: 100px;
+    }
+    &__posters-row{
+      margin-bottom: 150px;
+    }
+    &__best-theatre{
+      margin-bottom: 150px;
+      height: 550px;
+    }
+  }
+  .theatre-partners {
+    height: 557px;
+    &__title {
+      margin-bottom: 131px;
+    }
+    &__logo {
+      height: 169px;
+    }
+  }
+}
+/* Landscape phones and portrait tablets_____________ max-width - 768px __________*/
+@media (max-width: 768px) {
+  .header {
+    overflow: hidden;
+    height: 800px;
+    .container {
+      padding: 0;
+    }
+    .overlay{
+      height: 800px;
+    }
+  }
+
+  .header-menu {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    &__links {
+      transition: all 0.4s ease 0s;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: -500px;
+      display: block;
+      height: 800px;
+      width: 300px;
+      background: #333333;
+    }
+    &__links-list {
+      padding: 140px 0 0 39px;
+      margin-bottom: 89px;
+      flex-direction: column;
+      height: 305px;
+    }
+    &__link {
+      font-size: 24px;
+    }
+    &__social-media {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 140px;
+      height: 126px;
+      position: relative;
+      li {
+        &:nth-child(1) {
+          padding-left: 8.85px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &:nth-child(2) {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        &:nth-child(3) {
+          padding-bottom: 3px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        &:nth-child(4) {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    &__phone {
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+    }
+    &__number {
+      position: absolute;
+      right: 0;
+      top: 56px;
+    }
+/*_________________________burger____________________*/
+    &__burger {
+      cursor: pointer;
+      position: absolute;
+      z-index: -1;
+      top: 60px;
+      left: 39.67px;
+      width: 26.67px;
+      height: 20px;
+      position: relative;
+      transition: all 1s ease 0s;
+      &::after,
+      &::before {
+      content: "";
+        position: absolute;
+        height: 3px;
+        background-color: #ffffff;
+        left: 0;
+        transition: all 0.5s ease 0s;
+      }
+      &::before {
+        top: 0;
+        width: 26.67px
+      }
+      &::after {
+        bottom: 0;
+        width: 12.3px
+      }
+      span {
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background-color: #ffffff;
+        left: 0;
+        top: 8.5px;
+      }
+    }
+    &__back {
+      padding: 5px;
+      position: absolute;
+      top: 33px;
+      right: 33px;
+      width: 16px;
+      height: 16px;
+      &::after,
+      &::before {
+        content: "";
+        transition: transform 0.3s ease 0.3s, background-color 0s ease 0.3s;
+        position: absolute;
+        height: 2px;
+        background-color: #333333;
+        left: 3px;
+      }
+      &::before {
+        top: 5px;
+        width: 20px;
+        transform: translate(0, 7px) rotate(0deg);
+      }
+      &::after {
+        bottom: 5px;
+        width: 20px;
+        transform: translate(0, -7px) rotate(0deg);
+      }
+    }
+  }
+  /*_________________________burger-active____________________*/
+  .active {
+    .header-menu {
+      &__links {
+        left: 0;
+      }
+      &__burger {
+        &::before {
+          width: 12.3px
+        }
+        &::after {
+          width: 26.67px
+        }
+      }
+      &__back {
+        &::after,
+        &::before {
+          background-color: #ffffff;
+        }
+        &::before {
+          transform: translate(0, 7px) rotate(45deg);
+        }
+        &::after {
+          transform: translate(0, -7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+  .header-main {
+    &__body {
+      margin: 0 auto;
+      padding: 0 33px;
+    }
+    &__text {
+      max-width: 540px;
+      margin: 0;
+    }
+  }
+  .header-main {
+    &__title {
+      margin: 252px 0 1px;
+      text-align: center;
+      font-size: 36px;
+      letter-spacing: 0.05px;
+    }
+  }
+  .header-contacts {
+    display: none;
+  }
+  .about-theatre{
+    height: 597px;
+    .container{
+      padding: 0 15px 0 6.22%;
+    }
+    &__title {
+      padding: 90px 0 60px 0;
+    }
+  }
+  .our-partners {
+    height: 1405px;
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__posters-row{
+      margin-bottom: 90px;
+    }
+    &__text{
+      font-size: 29px;
+    }
+    &__best-theatre{
+      margin-bottom: 90px;
+    }
+    &__years{
+      margin-right: 0px;
+    }
+  }
+  .theatre-partners {
+    height: 557px;
+    &__title {
+      margin-bottom: 131px;
+    }
+    &__logo {
+      height: 169px;
+    }
+  }
+  .theatre-partners {
+    padding-right: 4.582% ;
+    padding-left: 5.078%;
+    height: 488px;
+    &__title {
+      margin-bottom: 92px;
+    }
+    &__logo {
+      height: 169px;
+    }
+  }
+}
+/* Portrait phones and smaller_______________________ max-width - 576px __________*/
+@media (max-width: 576px) {
+  .header {
+    height: 600px;
+    .overlay{
+      height: 600px;
+  }
+  }
+  .header-menu {
+    &__links-list {
+      padding: 50px 0 0 39px;
+    }
+    &__links {
+      height: 600px;
+    }
+  }
+  .header-main__title {
+    margin: 160px 0 1px;
+  }
+  .about-theatre{
+    height: 750px;
+    .container{
+      padding: 0 15px 0;
+    }
+    &__title {
+      padding: 90px 0 60px 0;
+      line-height: 65px;
+    }
+    &__body{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__best-theatre{
+      max-width: 504px;
+      margin-bottom: 20px;
+      padding: 0;
+      text-align: center;
+    }
+    &__body-title{
+      text-align: center;
+    }
+    &__about-numbers{
+      width: 328px;
+      margin: 0 auto;
+    }
+    &__about-numbers-main{
+      height: 102px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &__icon-chaird{
+      margin-bottom: 0px;
+    }
+  }
+  .our-partners {
+    height: 1385px;
+    &__text{
+      font-size: 25px;
+    }
+    &__posters-row{
+      margin-bottom: 80px;
+    }
+    &__best-theatre{
+      margin-bottom: 80px;
+    }
+  }
+  .theatre-partners {
+    padding-right: 5.199% ;
+    padding-left: 5.729%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Iphone 5__________________________________________ max-width - 320px __________*/
