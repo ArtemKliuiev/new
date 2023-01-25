@@ -396,8 +396,33 @@ height: 757px;
 
   }
 }
+
+
+/*________________________theatre-partners__________________________*/
+
+.x {
+  height: 1435px;
+  background-color: red;
+  &__title { }
+  &__body {}
+  &__contacts {}
+  &__ancets {}
+  &__ancets-row1 {}
+  &__ancets-column1 {}
+  &__ancets-name {}
+  &__ancets-company {}
+  &__ancets-phone {}
+  &__ancets-maill {}
+  &__ancets-column2 {}
+  &__ancets-texteria {}
+  &__ancets-row2 {}
+  &__ancets-text {}
+  &__ancets-button {}
+  &__ancets-link {}
+}
 .title {
 }
+
 
 
 
